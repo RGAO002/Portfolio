@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Ruoping",
+  lastName: "Gao",
+  name: `Ruoping Gao`,
+  role: "Software Engineer (AI & Product)",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "rgao002.application@gmail.com",
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Chinese"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My newsletter about software engineering and AI</>,
 };
 
 const social: Social = [
@@ -25,25 +25,7 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://github.com/RGAO002",
     essential: true,
   },
   {
@@ -60,23 +42,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building products with AI & strong engineering</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">CareerOps Pro</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Featured project
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/careeropspro",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Ruoping, a software engineer passionate about building customer-facing products. <br /> I work end-to-end—from talking to users to shipping reliable, maintainable software.
 </>
   ),
 };
@@ -94,7 +76,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,9 +84,11 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Recent M.S. Computer Science graduate (Stevens Institute of Technology, GPA 3.8) who builds 
+        customer-facing products with strong engineering fundamentals. I enjoy working end-to-end—from 
+        talking to users and clarifying messy requirements to shipping reliable, maintainable software. 
+        Hands-on experience across full-stack development and applied AI, including prototyping RAG/LLM 
+        workflows and integrating them into production-style systems.
       </>
     ),
   },
@@ -113,41 +97,53 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Freelance / Contract Projects",
+        timeframe: "June 2023 - Aug 2024",
+        role: "Independent Software Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Built and iterated on Lync, a specialized social platform, integrating AI-assisted matching 
+            logic and a scalable backend to handle complex user data and real-time updates.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Worked on end-to-end feature development for commercial clients, with a focus on PostgreSQL 
+            database design and reliable API endpoints to support a stable user experience.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Snapbrillia",
+        timeframe: "Dec 2021 - June 2023",
+        role: "Full-Stack Web Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Implemented backend endpoints and services using Java and Spring Boot to support product 
+            features and analytics workflows used by a large active user base.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Improved performance and reliability by refactoring backend services, tightening 
+            request/response contracts, and strengthening authentication with JWT-based security.
+          </>,
+          <>
+            Tuned PostgreSQL schemas and queries to reduce latency on frequently accessed paths, 
+            and collaborated across product/design/engineering to deliver changes safely.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Global Fertility Group",
+        timeframe: "June 2019 - Aug 2020",
+        role: "Software Engineering Internship",
+        achievements: [
+          <>
+            Improved internal patient management UI using React.js, focusing on faster rendering 
+            and cleaner interaction flows for daily use by staff.
+          </>,
+          <>
+            Worked with backend engineers to integrate secure RESTful APIs and ensure consistent 
+            handling of sensitive records.
           </>,
         ],
         images: [],
@@ -156,77 +152,68 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Stevens Institute of Technology",
+        description: <>M.S. in Computer Science | GPA: 3.8 | Sep 2024 - Dec 2025</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "California State University, Fresno",
+        description: <>B.S. in Computer Science | Sep 2020 - Aug 2021</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Product & AI Engineering",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>RAG-based workflows, LLM API integration, Vector DBs, lightweight agent pipelines, rapid prototyping</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "Python",
+            icon: "python",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Web Development",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building full-stack applications with Next.js, React, Express.js, and Spring Boot</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "TypeScript",
+            icon: "typescript",
           },
           {
             name: "Next.js",
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "React",
+            icon: "react",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Data & Infrastructure",
+        description: (
+          <>AWS (EC2, S3, Lambda), PostgreSQL (pgvector), MongoDB, Firebase, Docker</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "AWS",
+            icon: "aws",
           },
         ],
+        images: [],
       },
     ],
   },
@@ -235,7 +222,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about software engineering and AI...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
