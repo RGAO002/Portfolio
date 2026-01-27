@@ -193,9 +193,11 @@ const schema: SchemaConfig = {
   email: "rgao002.application@gmail.com",
 };
 
-// social links
+// social links (used for schema.org structured data)
 const sameAs: SameAsConfig = {
-  github: "https://github.com/RGAO002",
+  threads: "",
+  linkedin: "",
+  discord: "",
 };
 
 // social sharing configuration for blog posts
