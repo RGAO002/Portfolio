@@ -9,7 +9,7 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "rgao002.application@gmail.com",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Chinese"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Chinese", "Spanish (Basic)"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -97,53 +97,72 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Evlin — Early-Stage Homeschooling Platform",
+        timeframe: "Jan 2026 – Present",
+        role: "Founding / Lead Full-Stack Engineer (Part-time)",
+        achievements: [
+          <>
+            Designed and implemented an early MVP for a homeschooling scheduling and planning platform, focusing on real-world parent and student workflows.
+          </>,
+          <>
+            Built full-stack features including course scheduling (Neo4j), availability matching (Pinecone), and data modeling for students, parents, and instructors.
+          </>,
+          <>
+            Led early technical design across system architecture, data modeling, and API contracts to support rapid iteration.
+          </>,
+          <>
+            Collaborated closely with non-technical stakeholders to translate ambiguous requirements into working product features.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Freelance / Contract Projects",
-        timeframe: "June 2023 - Aug 2024",
+        timeframe: "June 2024 – Dec 2025",
         role: "Independent Software Developer",
         achievements: [
           <>
-            Built and iterated on Lync, a specialized social platform, integrating AI-assisted matching 
-            logic and a scalable backend to handle complex user data and real-time updates.
+            Lync (iOS): Built and shipped core user-facing features for a customer social product; used lightweight AI assistance to improve match relevance and reduce time-to-discovery by ~40% versus manual filtering.
           </>,
           <>
-            Worked on end-to-end feature development for commercial clients, with a focus on PostgreSQL 
-            database design and reliable API endpoints to support a stable user experience.
+            Delivered end-to-end product increments for commercial clients shipping UI updates, API endpoints, and PostgreSQL schema changes.
           </>,
         ],
         images: [],
       },
       {
         company: "Snapbrillia",
-        timeframe: "Dec 2021 - June 2023",
+        timeframe: "Dec 2021 – June 2024",
         role: "Full-Stack Web Engineer",
         achievements: [
           <>
-            Implemented backend endpoints and services using Java and Spring Boot to support product 
-            features and analytics workflows used by a large active user base.
+            Shipped user-facing product features for a web platform used by internal teams and customers, building React (TypeScript) components and backend services to support analytics and core workflows.
           </>,
           <>
-            Improved performance and reliability by refactoring backend services, tightening 
-            request/response contracts, and strengthening authentication with JWT-based security.
+            Worked closely with product and design to scope, build, and iterate on features end-to-end, translating requirements into clear UI behavior and stable APIs in a fast-moving environment.
           </>,
           <>
-            Tuned PostgreSQL schemas and queries to reduce latency on frequently accessed paths, 
-            and collaborated across product/design/engineering to deliver changes safely.
+            Improved performance and code quality through refactoring, testing, debugging, and profiling; tightened API contracts and hardened JWT-based authentication to reduce integration issues and reliability regressions.
+          </>,
+          <>
+            Optimized PostgreSQL schema and query execution plans (indexing strategy), reducing latency by ~30% on complex data retrieval paths that impacted key product views.
+          </>,
+          <>
+            Shipped and operated production releases on AWS (Docker/EC2) with CI/CD automation and basic observability, supporting 99.9% system reliability and faster iteration cycles.
           </>,
         ],
         images: [],
       },
       {
         company: "Global Fertility Group",
-        timeframe: "June 2019 - Aug 2020",
-        role: "Software Engineering Internship",
+        timeframe: "June 2019 – Aug 2020",
+        role: "Internship",
         achievements: [
           <>
-            Improved internal patient management UI using React.js, focusing on faster rendering 
-            and cleaner interaction flows for daily use by staff.
+            Improved an internal patient management UI using React.js, focusing on responsiveness, clearer interaction flows, and day-to-day usability for clinical staff.
           </>,
           <>
-            Worked with backend engineers to integrate secure RESTful APIs and ensure consistent 
-            handling of sensitive records.
+            Partnered with backend engineers to integrate secure REST APIs and ensure HIPAA compliance for sensitive patient records, emphasizing correctness and privacy-by-default behavior.
           </>,
         ],
         images: [],
