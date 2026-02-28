@@ -29,6 +29,12 @@ const social: Social = [
     essential: true,
   },
   {
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/ruoping-gao-72571717b/",
+    essential: true,
+  },
+  {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
